@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : BarbedFlower 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140322
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Minor Project</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="http://127.0.0.1:5000/#wrapper" accesskey="1" title="">Homepage</a></li>
+				<li><a href="http://127.0.0.1:5000/#page" accesskey="2" title="">Predict</a></li>
+				<li><a href="http://127.0.0.1:5000/#featured" accesskey="3" title="">Project DES</a></li>
+
+				
+
+				<li><a href="http://127.0.0.1:5000/#extra" accesskey="4" title="">About Us</a></li>
+				<li><a href="http://127.0.0.1:5000/#copyright" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div id="banner">
+		<div class="container">
+			<div class="title">
+				<h2>Customer-Churn Prediction</h2>
+				<span class="byline">Using machine learning and deep learning Techniques</span> </div>
+			<ul class="actions">
+				<li><img src="{{ url_for('static', filename='images/jiit.png') }}" alt="" width="100" height="100" /></li>
+			</ul>
+		</div>
+	</div>
+
+    
+	<div id="page" class="container">
+
+		<center>
+		<h1>PREDICT WHETHER YOUR CUSTOMER WILL RETAIN OR LEAVE</H1>
+		<br>
+
+
+    
+
+		<div class="row">
+
+		  <form action="http://localhost:5000/" method="POST">
+		  	<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label for="comment">SeniorCitizen(0=No,1=Yes):</label>
+				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">MonthlyCharges:</label>
+				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">TotalCharges:</label>
+				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Gender(Male,Female):</label>
+				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Partner(Yes,No):</label>
+				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Dependents(Yes,No):</label>
+				  <textarea class="form-control" rows="2" id="query6" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">PhoneService(Yes,No):</label>
+				  <textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">MultipleLines(No phone service, No, Yes):</label>
+				  <textarea class="form-control" rows="2" id="query8" name="query8" rows="2" cols="5" autofocus>{{query8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">InternetService(DSL, Fiber optic, No):</label>
+				  <textarea class="form-control" rows="2" id="query9" name="query9" rows="2" cols="5" autofocus>{{query9}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">OnlineSecurity(No, Yes, No internet service):</label>
+				  <textarea class="form-control" rows="2" id="query10" name="query10" rows="2" cols="5" autofocus>{{query10}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">OnlineBackup(No, Yes, No internet service):</label>
+				  <textarea class="form-control" rows="2" id="query11" name="query11" rows="2" cols="5" autofocus>{{query11}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">DeviceProtection(No, Yes, No internet service):</label>
+				  <textarea class="form-control" rows="2" id="query12" name="query12" rows="2" cols="5" autofocus>{{query12}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">TechSupport(No, Yes, No internet service):</label>
+				  <textarea class="form-control" rows="2" id="query13" name="query13" rows="2" cols="5" autofocus>{{query13}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">StreamingTV(No, Yes, No internet service):</label>
+				  <textarea class="form-control" rows="2" id="query14" name="query14" rows="2" cols="5" autofocus>{{query14}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">StreamingMovies(No, Yes, No internet service):</label>
+				  <textarea class="form-control" rows="2" id="query15" name="query15" rows="2" cols="5" autofocus>{{query15}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Contract(Month-to-month, One year,Two year):</label>
+				  <textarea class="form-control" rows="2" id="query16" name="query16" rows="2" cols="5" autofocus>{{query16}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">PaperlessBilling(Yes,No):</label>
+				  <textarea class="form-control" rows="2" id="query17" name="query17" rows="2" cols="5" autofocus>{{query17}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">PaymentMethod(Electronic check, Mailed check, Bank transfer (automatic),
+       Credit card (automatic)):</label>
+				  <textarea class="form-control" rows="2" id="query18" name="query18" rows="2" cols="5" autofocus>{{query18}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Tenure:</label>
+				  <textarea class="form-control" rows="2" id="query19" name="query19" rows="2" cols="5" autofocus>{{query19}}</textarea>
+			</div>
+			</div>
+			
+
+	               
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">PREDICT</button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query7" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			</div>
+		</div>
+		</center>
+	
+
+
+</div>		
+
+  <div id="featured">
+		<div class="container">
+        <img src="{{ url_for('static', filename='images/banner.jpg') }}" alt="" width="1000" height="333" />
+			<div class="title">
+				<h2>PROJECT DESCRIPTION</h2>
+				<span class="byline">Prediction Of Customer Retention Rate Of Your Telecom Company Employing Machine Learning Techniques</span> </div>
+			<p><b>Customer churn happens when customers stop doing business with a company.</b>Churn prediction is all about retaining the customers. When you offer a service,there might be a group of people who are not likely interested in availing the service that is being offered by you. Such a set of customers are more likely to stop using your service in the coming time, these set of customers are referred to as churned customers.This is not just true for services, this might also happen with products as well. Customers might start disassociating themselves from the product with which they had been associated since long. </p>
+		</div>
+		<ul class="actions">
+			<li><a href="#" class="button">Complete Project Details</a></li>
+		</ul>
+
+		
+	</div>
+
+   
+    
+    
+	<div id="extra" class="container">
+		<div class="title">
+			<h2>Project Developers</h2>
+			<span class="byline">Given below are the details of students and their mentor who developed this project</span> </div>
+		<div id="three-column">
+			<div class="boxA">
+				<div class="box">
+						
+					<img src="{{ url_for('static', filename='images/shubham.jpeg') }}" alt="" width="200" height="200" />
+					<p>SHUBHAM MISHRA
+					    19104009 B11</p>
+				</div>
+			</div>
+			<div class="boxB">
+				<div class="box">
+                                         <img src="{{ url_for('static', filename='images/govind.jpeg') }}" alt="" width="200" height="200" />
+					<p>GOVIND YADAV
+					    19104038 B12</p>
+				</div>
+			</div>
+			<div class="boxC">
+				<div class="box">
+                                        <img src="{{ url_for('static', filename='images/sj.jpeg') }}" alt="" width="200" height="200" />
+					<p> SAKSHAM JAIN
+					19104050 B12</p>
+				</div>
+			</div>
+                        
+                        <div class="boxD">
+				<div class="box">
+					<p>MENTOR</P>	
+					<img src="{{ url_for('static', filename='images/ankita.jpg') }}" alt="" width="200" height="200" />
+					<p>Dr. ANKITA VERMA  ASSISTANT PROFESSOR (SENIOR GRADE)</p>
+				</div>
+			</div>
+           
+
+			
+		</div>
+
+		<ul class="actions">
+			<li><a href="http://127.0.0.1:5000/#wrapper" class="button">Homepage</a></li>
+		</ul>
+	</div>
+    
+</div>
+
+
+
+
+<div id="copyright" class="container">
+	<p><i style="font-size:24px" class="fa">&#xf08c;</i>    <a href="https://www.linkedin.com/in/govind-yadav-008/">    Govind Yadav    </a>| <i style="font-size:24px" class="fa">&#xf08c;</i>       <a href="https://www.linkedin.com/in/saksham-jain-8718b5199/">     Saksham Jain</a> </p>
+</div>
+</body>
+</html>
